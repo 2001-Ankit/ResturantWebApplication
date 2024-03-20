@@ -1,0 +1,235 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Hero Section
+====================================== -->
+<section id="slider" class="slider slide-overlay-dark">
+	<!-- START REVOLUTION SLIDER 5.0 -->
+	<div class="rev_slider_wrapper">
+		<div id="slider1" class="rev_slider"  data-version="5.0">
+			<ul>
+                {% for slide in slides %}
+				<!-- slide 1 -->
+				<li data-transition="zoomout"
+					data-slotamount="default"
+					data-easein="Power4.easeInOut"
+					data-easeout="Power4.easeInOut"
+					data-masterspeed="2000">
+					<!-- MAIN IMAGE -->
+					<img src="{% static 'assets/images/sliders/slide-bg/2.jpg' %}" alt="Slide Background Image"  width="1920" height="1280">
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="-130"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--subheadline">Steak In Offers You</div>
+					</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="-65"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1750,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on"
+						>
+						<div class="slide--headline extend">Fresh & Tasty Meals</div>
+					</div>
+
+				    <!-- LAYER NR. 3 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="20"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--bio text--center">Steak In has the perfect place to enjoy fine food and great cocktails with <br>excellent service, in comfortable atmospheric surroundings. </div>
+					</div>
+
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="100"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+                        data-frames='[{"delay":2250,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+						data-basealign="slide"
+						data-responsive_offset="on"
+						data-responsive="off">
+						<div class="slide-action">
+							<a class="btn btn--primary btn--inverse btn--rounded mr-30" href="{% url 'menu'%}">View Menu</a>
+							<a class="btn btn--white btn--bordered btn--rounded" href="#">Book A Table</a>
+						</div>
+					</div>
+				</li>
+                {% endfor %}
+				<!-- slide 2 -->
+				<li data-transition="incube-horizontal"
+					data-slotamount="default"
+					data-easein="Power4.easeInOut"
+					data-easeout="Power4.easeInOut"
+					data-masterspeed="2000">
+					<!-- MAIN IMAGE -->
+					<img src="{% static 'assets/images/sliders/slide-bg/7.jpg' %}" alt="Slide Background Image"  width="1920" height="1280">
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="-65"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1500,"speed":300,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--subheadline">Unique Food</div>
+					</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="0"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1750,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--headline extend">For Unique Occasions</div>
+					</div>
+
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="100"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+                        data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+						data-basealign="slide"
+						data-responsive_offset="on"
+						data-responsive="off">
+						<div class="slide-action">
+							<a class="btn btn--white btn--bordered btn--rounded btn--lg" href="#">Book Your Table Now</a>
+						</div>
+					</div>
+				</li>
+
+				<!-- slide 3 -->
+				<li data-transition="cube-horizontal"
+					data-slotamount="default"
+					data-easein="Power4.easeInOut"
+					data-easeout="Power4.easeInOut"
+					data-masterspeed="2000">
+					<!-- MAIN IMAGE -->
+					<img src="{% static 'assets/images/sliders/slide-bg/3.jpg' %}" alt="Slide Background Image"  width="1920" height="1280">
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="-130"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--subheadline">Made With Love</div>
+					</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="-65"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1750,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--headline">We Serve Quality Food</div>
+					</div>
+
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="20"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-responsive_offset="on">
+						<div class="slide--bio text--center">Steak In has the perfect place to enjoy fine food and great cocktails with <br>excellent service, in comfortable atmospheric surroundings. </div>
+					</div>
+
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption"
+						data-x="center" data-hoffset="0"
+						data-y="center" data-voffset="100"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+                        data-frames='[{"delay":2250,"speed":1500,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none"
+						data-splitout="none"
+						data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
+						data-basealign="slide"
+						data-responsive_offset="on"
+						data-responsive="off">
+						<div class="slide-action">
+							<a class="btn btn--secondary btn--white btn--rounded" href="#">View Menu</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!-- END REVOLUTION SLIDER -->
+	</div>
+	<!-- END OF SLIDER WRAPPER -->
+</section>
+<!-- Menu Grid
+============================================= -->
+
+<!-- #menuGrid end -->
+
+<!-- Testimonial #3
+============================================= -->
+
+<!-- #testimonial3 end -->
+
+<!-- Reservation #1
+============================================= -->
+
+<!-- #reservation1 end -->
+
+<!-- Blog Carousel
+============================================= -->
+
+<!-- #blog end -->
+<!-- footer#1
+============================================= -->
+{% endblock %}
